@@ -26,7 +26,7 @@ const Table = <T extends DataItem>({ data, modal, setModal }: TableProps<T>) => 
         <>
             <div className={styles.container}>
                 <div className={styles.columnsHeader}>
-                    <div className={styles.name}>{data[0]?.name ? 'Name' : data[0]?.description ? 'Description' : data[0]?.title ? 'Title' : ''}</div>
+                    <div className={styles.name}>{data[0]?.name ? 'Name' : data[0]?.description ? 'Description' : data[1]?.title ? 'Title' : ''}</div>
                     <div className={styles.statusCreatedContainer}>
                         <div className={styles.status}>Status</div>
                         <div className={styles.created}>Created</div>
