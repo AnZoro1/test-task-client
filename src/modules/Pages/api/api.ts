@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ChangePages, PagesI, ApiResponse } from "./types";
 
-const API_URL = 'http://localhost:4000'
+const API_URL = 'http://localhost:4001'
 
 
 export const getPages = async (): Promise<ApiResponse> => {

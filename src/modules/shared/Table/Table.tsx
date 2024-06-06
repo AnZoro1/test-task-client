@@ -4,8 +4,7 @@ import styles from './Table.module.scss'
 import Modal from '../Modal/Modal';
 import ReactDOM from 'react-dom';
 import { DataItem } from './types';
-
-
+import getTitle from '../../../helpers/getTitle';
 interface TableProps<T extends DataItem> {
     data: T[];
     modal: boolean,
@@ -26,7 +25,7 @@ const Table = <T extends DataItem>({ data, modal, setModal }: TableProps<T>) => 
         <>
             <div className={styles.container}>
                 <div className={styles.columnsHeader}>
-                    <div className={styles.name}>{data[0]?.name ? 'Name' : data[0]?.description ? 'Description' : data[1]?.title ? 'Title' : ''}</div>
+                    <div className={styles.name}>{getTitle(data)}</div>
                     <div className={styles.statusCreatedContainer}>
                         <div className={styles.status}>Status</div>
                         <div className={styles.created}>Created</div>

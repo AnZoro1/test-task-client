@@ -3,7 +3,7 @@ import { ProductI } from "./types";
 import { ApiResponse } from "./types";
 import { ChangeProduct } from "./types";
 
-const API_URL = 'http://localhost:4000'
+const API_URL = 'http://localhost:4001'
 
 
 export const getProducts = async (): Promise<ApiResponse> => {

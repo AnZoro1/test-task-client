@@ -3,7 +3,7 @@ import { PricePlansI } from "./types";
 import { ApiResponse } from "./types";
 import { ChangePricePlans } from "./types";
 
-const API_URL = 'http://localhost:4000'
+const API_URL = 'http://localhost:4001'
 
 
 export const getPricePlans = async (): Promise<ApiResponse> => {
